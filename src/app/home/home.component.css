@@ -1,0 +1,48 @@
+h3
+{
+    color:white;
+    text-align: center;
+}
+h5
+{
+  color: white;
+}
+
+#table-scroll {
+  height:350px;
+  overflow:auto;  
+  margin-top:20px;
+  
+}
+
+#users {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+}
+  
+#users td, #users th {
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+  
+#users tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+#users tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+  
+#users tr:hover {
+  background-color: #ddd;
+}
+  
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(76, 152, 175);
+    color: white;
+}
+

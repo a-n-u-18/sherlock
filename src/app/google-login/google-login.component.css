@@ -1,0 +1,131 @@
+.modalbox.success,
+.modalbox.error {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #fff;
+    padding: 25px 25px 15px;
+    text-align: center;
+    z-index: 1;
+    top: 25%;
+}
+
+.failure {
+    color: #f0f0f0;
+}
+
+.notify {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, .6);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 30px;
+    transition: height .2s;
+    z-index: 10;
+}
+
+.modalbox.success.animate .icon,
+.modalbox.error.animate .icon {
+    -webkit-animation: fall-in 0.75s;
+    -moz-animation: fall-in 0.75s;
+    -o-animation: fall-in 0.75s;
+    animation: fall-in 0.75s;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.modalbox.success button,
+.modalbox.error button,
+.modalbox.success button:active,
+.modalbox.error button:active,
+.modalbox.success button:focus,
+.modalbox.error button:focus {
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 80%;
+    background: transparent;
+    color: #4caf50;
+    border-color: #4caf50;
+    outline: none;
+}
+
+.modalbox.success button:hover,
+.modalbox.error button:hover,
+.modalbox.success button:active:hover,
+.modalbox.error button:active:hover,
+.modalbox.success button:focus:hover,
+.modalbox.error button:focus:hover {
+    color: #fff;
+    background: #4caf50;
+    border-color: transparent;
+}
+
+.modalbox.success .icon,
+.modalbox.error .icon {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -75px;
+    background: #4caf50;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.modalbox.success .icon span,
+.modalbox.error .icon span {
+    position: relative;
+    font-size: 4em;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.modalbox.error button,
+.modalbox.error button:active,
+.modalbox.error button:focus {
+    color: #f44336;
+    border-color: #f44336;
+}
+
+.modalbox.error button:hover,
+.modalbox.error button:active:hover,
+.modalbox.error button:focus:hover {
+    color: #fff;
+    background: #f44336;
+}
+
+.modalbox.error .icon {
+    background: #f44336;
+}
+
+.modalbox.error .icon span {
+    padding-top: 25px;
+}
+
+.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    /* stupid browser compat. smh */
+}
+
+.btn {
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    width: 60%;
+    border-radius: 15px;
+}
